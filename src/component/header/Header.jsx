@@ -1,13 +1,14 @@
 import React from "react";
-import {NavLink} from "react-router-dom";
+import {Link} from "react-router-dom";
+import Button from "@material-ui/core/Button";
 
 function Header() {
     return (
-        <nav>
-            <NavLink exact activeClassName="active" to="/">Home</NavLink>
-            <NavLink activeClassName="active" to="/users">Users</NavLink>
-            <NavLink activeClassName="active" to="/contact">Contact</NavLink>
-        </nav>
+        <div style={{background: "#323232"}}>
+            <Button style={{color: "white"}} component={Link} variant="outlined" to="/">Home</Button>
+            <Button component={Link} variant="outlined" to="/users">Users</Button>
+            <Button component={Link} variant="outlined" to="/contact">Ko</Button>
+        </div>
     );
 }
 
