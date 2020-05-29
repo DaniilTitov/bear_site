@@ -1,0 +1,11 @@
+.footer {
+    background: #323232;
+
+
+    height: 10vh;
+    margin-top: -10vh;
+
+    vertical-align: baseline;
+    /*line-height: 10px;*/
+
+}

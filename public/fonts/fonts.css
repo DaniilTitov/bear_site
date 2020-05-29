@@ -4,6 +4,6 @@
     url('woff/JetBrainsMono-Regular.woff') format('woff'),
     url('woff2/JetBrainsMono-Regular.woff2') format('woff2'),
     url('ttf/JetBrainsMono-Regular.ttf') format('truetype');
-    font-weight: normal;
+    font-weight: 100;
     font-style: normal;
 }
