@@ -1,14 +1,25 @@
 import React from "react";
-import {Link} from "react-router-dom";
-import Button from "@material-ui/core/Button";
+import OutlinedButtonLink from "../button/OutlinedButtonLink";
+import Grid from "@material-ui/core/Grid";
+import {Box} from "@material-ui/core";
 
 function Header() {
     return (
-        <div style={{background: "#323232"}}>
-            <Button style={{color: "white"}} component={Link} variant="outlined" to="/">Home</Button>
-            <Button component={Link} variant="outlined" to="/users">Users</Button>
-            <Button component={Link} variant="outlined" to="/contact">Ko</Button>
-        </div>
+        <Box borderBottom={1} style={{padding: 15}}>
+            <Grid container direction="row" justify="center" alignItems="center">
+                <Grid item xs={4}>
+                    <div className="btn btn-three">
+                        <OutlinedButtonLink to="/" text="Home"/>
+                    </div>
+                </Grid>
+                <Grid item xs={4}>
+                    <OutlinedButtonLink to="/users" text="Users"/>
+                </Grid>
+                <Grid item xs={4}>
+                    <OutlinedButtonLink to="/contacts" text="Ko"/>
+                </Grid>
+            </Grid>
+        </Box>
     );
 }
 

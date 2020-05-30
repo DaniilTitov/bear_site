@@ -1,11 +1,18 @@
 import React from "react";
-import Footer from "../footer/Footer";
+import "./Users.css"
 
 function Users() {
     return (
         <div>
-            <p>Users</p>
+            <br/>
+                <div className="btn btn-three">
+                    <span>HOVER ME</span>
+                </div>
         </div>
+
+        // <div>
+        //     <p>Users</p>
+        // </div>
     );
 }
 
