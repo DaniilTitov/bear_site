@@ -6,7 +6,7 @@ function MailComponent(props) {
     const {address} = props
 
     return (
-        <Box display="flex" flexDirection="row">
+        <Box display="flex" flexDirection="row" style={{marginRight: 40, marginLeft: 10}}>
             <Box component={MailIcon} address={address} display="inline"/>
             <Box component="p" display="inline">{address}</Box>
         </Box>

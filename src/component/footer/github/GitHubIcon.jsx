@@ -6,7 +6,7 @@ function GitIcon() {
         <GitHubIcon cursor="pointer"
                     fontSize="large"
                     style={{margin: 10}}
-                    onClick={() => window.location = 'https://github.com/DaniilTitov'}/>
+                    onClick={() => window.open('https://github.com/DaniilTitov')}/>
     );
 }
 
