@@ -1,11 +1,16 @@
 import React from "react";
 import "./Footer.css";
+import Container from "@material-ui/core/Container";
 
 function Footer() {
     return (
-        <div className="footer">
-            <h1>This is footer</h1>
-        </div>
+        <footer style={{marginTop: 'auto'}}>
+            <Container maxWidth="sm">
+                <p>
+                    Тут будет что то написано
+                </p>
+            </Container>
+        </footer>
     );
 }
 

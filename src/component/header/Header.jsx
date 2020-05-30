@@ -11,7 +11,7 @@ function Header() {
                     <OutlinedButtonLink to="/" text="Home"/>
                 </Grid>
                 <Grid item xs={4}>
-                    <OutlinedButtonLink to="/users" text="Users"/>
+                    <OutlinedButtonLink to="/notes" text="Notes"/>
                 </Grid>
                 <Grid item xs={4}>
                     <OutlinedButtonLink to="/contacts" text="About"/>

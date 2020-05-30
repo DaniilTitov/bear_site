@@ -5,23 +5,20 @@ import Header from "./component/header/Header";
 import Footer from "./component/footer/Footer";
 import NotFound from "./component/not_found/NotFound";
 import Content from "./component/content/Content";
-import Users from "./component/users/Users";
+import Notes from "./component/users/Notes";
 
 function App() {
     return (
         <Router>
-            <div className="App">
+            <div style={{display: 'flex', flexDirection: 'column', minHeight: '100vh'}} className="App">
+                <Header/>
 
-                <div className="container">
-                    <Header/>
-
-                    <Switch>
-                        <Route exact path="/" component={Content}/>
-                        <Route path="/users" component={Users}/>
-                        {/*<Route path="/contact" component={Contact}/>*/}
-                        <Route component={NotFound}/>
-                    </Switch>
-                </div>
+                <Switch>
+                    <Route exact path="/" component={Content}/>
+                    <Route path="/notes" component={Notes}/>
+                    {/*<Route path="/contact" component={Contact}/>*/}
+                    <Route component={NotFound}/>
+                </Switch>
 
                 <Footer/>
             </div>
