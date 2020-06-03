@@ -29,7 +29,6 @@ class CustomizedCarousel extends React.Component {
                         borderRadius: '50%',
                         display: "inline-block",
                         backgroundColor: this.state.value === index ? "white" : "#666666",
-                        color: 'green'
                     }}
                 />
             ));
@@ -37,27 +36,21 @@ class CustomizedCarousel extends React.Component {
 
     render() {
         let arrowLeft = <div style={{fontSize: 30, cursor: 'pointer'}}><Icon name="arrow-left"/></div>;
-        let arrowRight = <div style={{fontSize: 30, marginLeft: 10, marginRight: 10, cursor: 'pointer'}}><Icon
+        let arrowRight = <div style={{fontSize: 30, cursor: 'pointer'}}><Icon
             name="arrow-right"/></div>;
 
         return (
-            <div style={{
-                alignContent: 'center',
-                textAlign: 'center'
-            }}>
-
+            <div>
                 <Carousel arrowLeft={arrowLeft}
                           arrowRight={arrowRight}
-                    // arrowRightDisabled
-                    // arrowLeftDisabled
                           addArrowClickHandler
-                          centered
+                          minDraggableOffset={5}
                           value={this.state.value}
                           onChange={this.onchange}
                 >
-                    <img src={FirstImg} alt="Sorry"/>
-                    <img src={SecondImg} alt="Sorry"/>
-                    <div style={{fontSize: 20}}>Больше у меня нет хороших фотографий</div>
+                    <img className="unselectable" src={FirstImg} alt="Sorry"/>
+                    <img className="unselectable" src={SecondImg} alt="Sorry"/>
+                    <div className="unselectable" style={{fontSize: 20}}>Больше у меня нет хороших фотографий</div>
                 </Carousel>
 
                 <Dots

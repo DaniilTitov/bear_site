@@ -7,8 +7,30 @@ html {
     text-align: center;
     justify-content: center;
     color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-.container {
-    min-height: 95vh;
+.highlight::-moz-selection {
+    background-color: #434647;
+    color: white;
+}
+
+.highlight::selection {
+    background-color: #434647;
+    color: white;
+}
+
+.ti-cursor::selection {
+    background-color: #434647;
+    color: white;
+}
+
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }

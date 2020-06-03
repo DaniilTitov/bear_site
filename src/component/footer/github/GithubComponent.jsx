@@ -8,7 +8,7 @@ function GitHubComponent(props) {
     return (
         <Box display="flex" flexDirection="row" style={{marginRight: 40}}>
             <Box component={GitIcon} address={address} display="inline"/>
-            <Box component="p" display="inline">{address}</Box>
+            <Box component="p" className="highlight" display="inline">{address}</Box>
         </Box>
     );
 }

@@ -8,7 +8,7 @@ function TelegramComponent(props) {
     return (
         <Box display="flex" flexDirection="row" style={{marginRight: 40}}>
             <Box component={TIcon} username={username} display="inline"/>
-            <Box component="p" display="inline">@{username.split("/").pop()}</Box>
+            <Box component="p" className="highlight" display="inline">@{username.split("/").pop()}</Box>
         </Box>
     );
 }

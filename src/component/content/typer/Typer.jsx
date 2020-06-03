@@ -5,11 +5,11 @@ function Typer() {
     return (
         <div>
             <p style={{textAlign: "left", margin: 15, marginTop: 10, fontSize: "x-large"}}>
-                <TypeIt>
+                <TypeIt className="highlight">
                     Титов Даниил.
-                    <br/>
+                    <br className="highlight"/>
                     Java разработчик.
-                    <br/>
+                    <br className="highlight"/>
                     Дратути!
                 </TypeIt>
             </p>

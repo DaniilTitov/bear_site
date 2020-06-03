@@ -10,7 +10,7 @@ import Notes from "./component/users/Notes";
 function App() {
     return (
         <Router>
-            <div style={{display: 'flex', flexDirection: 'column', minHeight: '100vh'}} className="App">
+            <div className="App">
                 <Header/>
 
                 <Switch>
