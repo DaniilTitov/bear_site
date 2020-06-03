@@ -15,18 +15,6 @@ class CustomizedCarousel extends React.Component {
     }
 
     onchange = (value) => {
-        if (value > 3) {
-            value = 0;
-            this.setState({value});
-            return
-        }
-
-        if (value < 0) {
-            value = 3;
-            this.setState({value});
-            return;
-        }
-
         this.setState({value});
     }
 
@@ -48,14 +36,20 @@ class CustomizedCarousel extends React.Component {
     }
 
     render() {
+        let arrowLeft = <div style={{fontSize: 30, cursor: 'pointer'}}><Icon name="arrow-left"/></div>;
+        let arrowRight = <div style={{fontSize: 30, marginLeft: 10, marginRight: 10, cursor: 'pointer'}}><Icon
+            name="arrow-right"/></div>;
+
         return (
             <div style={{
                 alignContent: 'center',
                 textAlign: 'center'
             }}>
 
-                <Carousel arrowLeft={<Icon name="angle-left"/>}
-                          arrowRight={<Icon name="angle-right"/>}
+                <Carousel arrowLeft={arrowLeft}
+                          arrowRight={arrowRight}
+                    // arrowRightDisabled
+                    // arrowLeftDisabled
                           addArrowClickHandler
                           centered
                           value={this.state.value}
@@ -63,10 +57,7 @@ class CustomizedCarousel extends React.Component {
                 >
                     <img src={FirstImg} alt="Sorry"/>
                     <img src={SecondImg} alt="Sorry"/>
-                    {/*<img src={imageTwo}/>*/}
-                    {/*<img src={imageThree}/>*/}
-                    <div>Больше у меня нет хороших фотографий</div>
-                    {/*<div>Hello3</div>*/}
+                    <div style={{fontSize: 20}}>Больше у меня нет хороших фотографий</div>
                 </Carousel>
 
                 <Dots

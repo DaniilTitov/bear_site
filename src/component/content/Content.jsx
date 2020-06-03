@@ -6,7 +6,7 @@ import Grid from "@material-ui/core/Grid";
 
 function Content() {
     return (
-        <Grid style={{marginTop: 40}} container direction="row" justify="space-around" alignItems="center">
+        <Grid style={{marginTop: 35}} container direction="row" justify="space-around" alignItems="center">
             <Grid item xs={6}>
                 <CustomizedCarousel/>
             </Grid>
