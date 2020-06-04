@@ -36,8 +36,7 @@ class CustomizedCarousel extends React.Component {
 
     render() {
         let arrowLeft = <div style={{fontSize: 30, cursor: 'pointer'}}><Icon name="arrow-left"/></div>;
-        let arrowRight = <div style={{fontSize: 30, cursor: 'pointer'}}><Icon
-            name="arrow-right"/></div>;
+        let arrowRight = <div style={{fontSize: 30, cursor: 'pointer'}}><Icon name="arrow-right"/></div>;
 
         return (
             <div>
@@ -48,8 +47,8 @@ class CustomizedCarousel extends React.Component {
                           value={this.state.value}
                           onChange={this.onchange}
                 >
-                    <img className="unselectable" src={FirstImg} alt="Sorry"/>
-                    <img className="unselectable" src={SecondImg} alt="Sorry"/>
+                    <img className="unselectable" src={FirstImg} alt="Тут должен был быть я"/>
+                    <img className="unselectable" src={SecondImg} alt="И тут тоже"/>
                     <div className="unselectable" style={{fontSize: 20}}>Больше у меня нет хороших фотографий</div>
                 </Carousel>
 

@@ -12,6 +12,16 @@ html {
     min-height: 100vh;
 }
 
+.br::-moz-selection {
+    background-color: #434647;
+    color: white;
+}
+
+br::selection {
+    background-color: #434647;
+    color: white;
+}
+
 .highlight::-moz-selection {
     background-color: #434647;
     color: white;

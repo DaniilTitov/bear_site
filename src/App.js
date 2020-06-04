@@ -5,7 +5,7 @@ import Header from "./component/header/Header";
 import Footer from "./component/footer/Footer";
 import NotFound from "./component/not_found/NotFound";
 import Content from "./component/content/Content";
-import Notes from "./component/users/Notes";
+import Notes from "./component/notes/Notes";
 
 function App() {
     return (
